@@ -50,5 +50,25 @@ func main()  {
 
 	cV9 := fmt.Sprintf("%f", 3.14)
 	pl(cV9)
+
+	// %d : Integer
+	// %c : Character
+	// %f : Float
+	// %t : Boolean
+	// %s : String
+	// %o : Base 8
+	// %x : Base 16
+	// %v : Guesses based on data type
+	// %T : Type supplied Value
 	
+	fmt.Printf("%s %d %c %f %t %o %x\n",
+		"Stuff", 1, 'A', 3.14, true, 1, 1)
+
+	fmt.Printf("%9f\n", 3.14)
+	fmt.Printf("%5f\n", 3.14)
+	fmt.Printf("%.5f\n", 3.14234243324234)
+	fmt.Printf("%9.5f\n", 3.14234243324234)
+
+	sp1 := fmt.Sprintf("%9.f\n", 3.141159)
+	pl(sp1)
 }
