@@ -1,0 +1,16 @@
+<html>
+    <body>
+        <h1>To do list</h1>
+        <div>
+            {{ .ToDoCount }} Todos
+            <a href="/new">Add a todo</a>
+        </div>
+        <div>
+            {{ range .ToDos }}
+            <p>
+                {{.}}
+            </p>
+            {{end}}
+        </div>
+    </body>
+</html>
